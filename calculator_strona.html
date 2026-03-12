@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Życia Studenckiego</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e3a49d370f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="calculator_style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="active">
+                    <a href="#" data-section="glowna">
+                        <span class="fa-solid fa-house"></span>
+                        <span>Główna</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-section="profil">
+                        <span class="fa-solid fa-user"></span>
+                        <span>Profil</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-section="test">
+                        <span class="fa-solid fa-clipboard-question"></span>
+                        <span>Test</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-section="paragon">
+                        <span class="fa-solid fa-receipt"></span>
+                        <span>Paragon</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-section="kontakt">
+                        <span class="fa-solid fa-paper-plane"></span>
+                        <span>Kontakt</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-section="ustawienia">
+                        <span class="fa-solid fa-gear"></span>
+                        <span>Ustawienia</span>
+                    </a>
+                </li>
+                <div class="nav-slider"></div>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- GŁÓWNA -->
+    <div id="glowna" class="section active">
+        <div class="container">
+            <div class="hero">
+                <h1>Kalkulator Życia Studenckiego</h1>
+                <p>Dowiedz się, ile naprawdę kosztuje utrzymanie studenta w Lublinie!</p>
+                <p>Odpowiedz na 10 prostych pytań i otrzymaj szczegółowy paragon z podsumowaniem miesięcznych kosztów.</p>
+                <button id="startMainTest" class="start-btn">Rozpocznij Test</button>
+            </div>
+            
+<!-- SEKCJA METODOLOGII -->
+<section id="metodologia" class="methodology-section">
+    <h2>Metodologia Kalkulacji</h2>
+    <p class="methodology-intro">Poniżej znajdują się szczegółowe źródła cen wykorzystanych w kalkulacjach:</p>
+    
+    <div class="methodology-grid">
+        <div class="methodology-item">
+            <div class="methodology-icon">🏠</div>
+            <h3>Zakwaterowanie</h3>
+            <div class="methodology-details">
+                <p><strong>Akademik (750 zł)</strong> - cena za miejsce w akademiku Politechniki Lubelskiej</p>
+                <p><strong>Pokój (950 zł)</strong> - średnia cena wynajmu pokoju wzięta z ogłoszeń na OLX</p>
+                <p><strong>Z rodzicami (0 zł)</strong> - rodzicom raczej nie płacisz</p>
+            </div>
+        </div>
+        
+        <div class="methodology-item">
+            <div class="methodology-icon">🚬</div>
+            <h3>Używki</h3>
+            <div class="methodology-details">
+                <p><strong>Papierosy tradycyjne (600 zł)</strong> - paczka (20zł) × 30 dni</p>
+                <p><strong>Elektryczne (200 zł)</strong> - średnia cena liquidu (30zł/10ml) na miesiąc wystarcza 50 ml + kartridż</p>
+                <p><strong>Nie palę (0 zł)</strong> - no i super</p>
+            </div>
+        </div>
+        
+        <div class="methodology-item">
+            <div class="methodology-icon">🎵</div>
+            <h3>Subskrypcje</h3>
+            <div class="methodology-details">
+                <p><strong>Spotify (13 zł)</strong> - oficjalna cena subskrypcji studenckiej</p>
+                <p><strong>Apple Music (12 zł)</strong> - oficjalna cena subskrypcji</p>
+                <p><strong>Za darmo (0 zł)</strong> - YouTube, radio</p>
+            </div>
+        </div>
+        
+        <div class="methodology-item">
+            <div class="methodology-icon">🚍</div>
+            <h3>Transport</h3>
+            <div class="methodology-details">
+                <p><strong>MPK (64 zł)</strong> - cena biletu miesięcznego studenckiego w aplikacji "Lubika"</p>
+                <p><strong>Samochód (200 zł)</strong> - średni koszt paliwa do dojazdów</p>
+                <p><strong>Pieszo (0 zł)</strong> - chodzenie jest super!</p>
+            </div>
+        </div>
+        
+        <div class="methodology-item">
+            <div class="methodology-icon">☕</div>
+            <h3>Kawa</h3>
+            <div class="methodology-details">
+                <p><strong>Codziennie (180 zł)</strong> - kawa (9zł) × 20 dni(dni robocze)</p>
+                <p><strong>Kilka razy (90 zł)</strong> - 3× w tygodniu × 4 tygodnie</p>
+                <p><strong>Nie piję (0 zł)</strong> - masz naturalny power?</p>
+            </div>
+        </div>
+        
+        <div class="methodology-item">
+            <div class="methodology-icon">🛒</div>
+            <h3>Zakupy online</h3>
+            <div class="methodology-details">
+                <p><strong>Regularnie (150 zł)</strong> - średnia wartość koszyka osób, które robią zakupy online częściej według mojego krótkiego badania</p>
+                <p><strong>Promocje (80 zł)</strong> - przeciętny koszyk kupujących głównie podczas promocji, na podstawie zebranych odpowiedzi</p>
+                <p><strong>Oszczędzam (0 zł)</strong> - brak zakupów online</p>
+            </div>
+        </div>
+
+        
+        <div class="methodology-item">
+            <div class="methodology-icon">🍫</div>
+            <h3>Przekąski podczas nauki</h3>
+            <div class="methodology-details">
+                <p><strong>Tak, zawsze coś chrupię (120 zł)</strong> - osoby, które często coś kupują w Żabce/Stokrotce(30zł/tydzień)</p>
+                <p><strong>Czasami (60 zł)</strong> - koszyk osób, które rzadziej chodzą na zajęcia(15zł/tydzień)</p>
+                <p><strong>Nie, jestem silny psychicznie (0 zł)</strong> - zazdroszczę</p>
+            </div>
+        </div>
+        
+        
+        <div class="methodology-item">
+            <div class="methodology-icon">🍻</div>
+            <h3> Wyjścia na piwo</h3>
+            <div class="methodology-details">
+                <p><strong>Co weekend (160 zł)</strong> - dwa piwa w klubie/barze (20 zł) × 4 weekendy = 160 zł</p>
+                <p><strong>Raz w miesiącu (60 zł)</strong> - przyjemny wieczór, coś wypić i zjeść</p>
+                <p><strong>Nie piję alkoholu (0 zł)</strong> - mój szacunek</p>
+            </div>
+        </div>
+        
+        
+        <div class="methodology-item">
+            <div class="methodology-icon">📺</div>
+            <h3>Seriale/rozrywka</h3>
+            <div class="methodology-details">
+                <p><strong>Netflix (50 zł)</strong> - cena podstawowego abonamentu Netflix w Polsce</p>
+                <p><strong>Polsat Box Go (30 zł)</strong> - cena abonamentu Polsat Box Go</p>
+                <p><strong>Wolę YouTube (0 zł)</strong> - korzystanie z darmowych platform</p>
+            </div>
+        </div>
+        
+        
+        <div class="methodology-item">
+            <div class="methodology-icon">🍽️</div>
+            <h3>Zakupy spożywcze</h3>
+            <div class="methodology-details">
+                <p><strong>Raz w tygodniu (500 zł)</strong> - pełne, regularne zakupy spożywcze (125 zł/tydzień)</p>
+                <p><strong>Student budget edition (200 zł)</strong> - ograniczone zakupy, głównie podstawowe produkty</p>
+                <p><strong>Matka gotuje (0 zł)</strong> - brak wydatków na jedzenie</p>
+            </div>
+        </div>
+
+    </div>
+    
+    
+    <div class="methodology-note">
+        <p><strong>Uwaga:</strong> Są to ceny średnie orientacyjne. Ostateczne koszty mogą się różnić w zależności od indywidualnych nawyków konsumpcyjnych.</p>
+    </div>
+</section>
+
+        </div>
+    </div>
+
+    <!-- PROFIL -->
+    <div id="profil" class="section">
+        <div class="container">
+            <h2>Twój Profil</h2>
+            <p>Tu będzie twój profil...</p>
+        </div>
+    </div>
+
+    <!-- TEST -->
+    <div id="test" class="section">
+        <div class="container">
+            <h2>Test</h2>
+            <p>Tu będzie test...</p>
+        </div>
+    </div>
+
+    <!-- PARAGON -->
+    <div id="paragon" class="section">
+        <div class="container">
+            <div class="paragon-header">
+                <h2>Twoje Paragony</h2>
+                <p>Historia wszystkich wykonanych testów</p>
+            </div>
+            
+            <!-- BLOK RADCA -->
+            <div id="radca" class="radca-container">
+                <!-- Treść wypełni się dynamicznie przez JavaScript -->
+            </div>
+            
+            <div id="receiptsContainer" class="receipts-grid">
+                <!-- paragony dodane przez JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- KONTAKT -->
+    <div id="kontakt" class="section">
+        <div class="container">
+            <h2>Kontakt</h2>
+            <p>Tu będą kontakty...</p>
+        </div>
+    </div>
+
+    <!-- USTAWIENIA -->
+    <div id="ustawienia" class="section">
+        <div class="container">
+            <h2>Ustawienia</h2>
+            <p>Tu będą ustawienia...</p>
+        </div>
+    </div>
+
+    <script src="calculator_script.js"></script>
+</body>
+</html>
